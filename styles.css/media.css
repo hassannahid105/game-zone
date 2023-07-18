@@ -8,6 +8,19 @@
     flex-direction: column;
     gap: 4rem;
   }
+  /* banner */
+  .banner {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .banner__des {
+    padding: 0;
+  }
+  .banner__des,
+  .banner__image {
+    width: 100%;
+  }
 }
 /* mid device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -18,5 +31,18 @@
   .nav__items {
     flex-direction: column;
     gap: 4rem;
+  }
+  /* banner */
+  .banner {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .banner__des {
+    padding: 0;
+  }
+  .banner__des,
+  .banner__image {
+    width: 100%;
   }
 }

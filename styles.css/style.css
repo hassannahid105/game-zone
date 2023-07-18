@@ -103,19 +103,23 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 20rem;
-  flex: 0 0 50%;
+  /* flex: 0 0 auto; */
 }
-
+.banner__des {
+  /* display: flex; */
+  align-self: flex-start;
+  padding: 8rem 0;
+}
 .banner__des,
 .banner__image {
   width: 50%;
-  text-align: center;
 }
 .banner__des {
   background-image: url(../images/Group\ 14.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding-left: 23rem;
 }
 .banner__des h4 {
   color: #0b0223;
@@ -137,15 +141,28 @@ img {
   font-size: 2rem;
   font-weight: 500;
   text-transform: lowercase;
+  padding: 0.8rem;
+}
+.banner__des p > i {
+  padding-right: 0.5rem;
 }
 .btn {
   padding: 2rem 4rem;
-  color: #fff;
   font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
-  border-radius: 48px;
+  border-radius: 4.8rem;
   border: 0;
   margin-top: 4rem;
-  gap: 1rem;
+  margin-right: 1rem;
+}
+.btn a {
+  color: #fff;
+}
+.btn__primary {
+  background-color: #ff425a;
+}
+
+.btn__secondary {
+  background-color: #4ec5f7;
 }
