@@ -1,0 +1,22 @@
+/* mobile device */
+@media screen and (max-width: 576px) {
+  .nav {
+    flex-direction: column;
+    gap: 6rem;
+  }
+  .nav__items {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+/* mid device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .nav {
+    flex-direction: column;
+    gap: 6rem;
+  }
+  .nav__items {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
