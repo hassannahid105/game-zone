@@ -56,9 +56,29 @@
     bottom: -4rem;
     left: -5rem;
   }
+  /* game gallery */
+  .game .image {
+    width: 40px;
+    height: 40px;
+  }
+  .games {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 5rem;
+  }
+  .game strong {
+    font-size: 0.8rem;
+    line-height: 1;
+    margin-right: 0.5rem;
+  }
 }
 /* mid device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
+  .banner,
+  .card,
+  .play__now {
+    padding: 4rem;
+  }
   .nav {
     flex-direction: column;
     gap: 6rem;
@@ -70,7 +90,6 @@
   /* banner */
   .banner {
     flex-direction: column-reverse;
-    gap: 2rem;
     padding: 2rem;
   }
   .banner__des {
@@ -79,5 +98,39 @@
   .banner__des,
   .banner__image {
     width: 100%;
+  }
+  /* play now */
+  .play__now {
+    grid-template-columns: 1fr;
+  }
+  .play__now_image {
+    width: 90%;
+    position: relative;
+  }
+  .play__now_text {
+    width: 100%;
+    margin-left: 0;
+  }
+  .play__now_text p {
+    margin-bottom: 2rem;
+  }
+  .position {
+    width: 50%;
+    bottom: -7rem;
+    left: -7rem;
+  }
+  /* game gallery */
+  .game .image {
+    width: 60px;
+    height: 60px;
+  }
+  .games {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 5rem;
+  }
+  .game strong {
+    font-size: 1.8rem;
+    line-height: 1;
   }
 }
