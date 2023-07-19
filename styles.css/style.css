@@ -202,3 +202,33 @@ p {
 .card p {
   font-size: 2rem;
 }
+
+/* play now */
+.play__now {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.play__now_image {
+  width: 85%;
+  margin-left: auto;
+  position: relative;
+}
+.play__now_text {
+  width: 50%;
+  margin-left: 20%;
+}
+
+.play__now_text h4 {
+  font-weight: 700;
+  line-height: 6rem;
+  margin-bottom: 1rem;
+}
+
+.position {
+  position: absolute;
+  bottom: -10rem;
+  left: -10rem;
+}
