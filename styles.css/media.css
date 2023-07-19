@@ -1,5 +1,8 @@
 /* mobile device */
 @media screen and (max-width: 576px) {
+  section {
+    margin: 2rem auto;
+  }
   .nav {
     flex-direction: column;
     gap: 6rem;
@@ -8,11 +11,14 @@
     flex-direction: column;
     gap: 4rem;
   }
+  .banner,
+  .card {
+    padding: 2rem;
+  }
   /* banner */
   .banner {
     flex-direction: column-reverse;
     gap: 2rem;
-    padding: 2rem;
   }
   .banner__des {
     padding: 0;
@@ -20,6 +26,14 @@
   .banner__des,
   .banner__image {
     width: 100%;
+  }
+  /* online game */
+  .card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .online p {
+    margin: 1rem 0 1rem 0;
   }
 }
 /* mid device */

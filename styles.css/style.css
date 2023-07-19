@@ -11,6 +11,8 @@ html {
 body {
   font-family: "Work Sans", sans-serif;
 }
+
+/* shared style */
 li {
   list-style: none;
 }
@@ -20,11 +22,55 @@ a {
 img {
   width: 100%;
 }
-/* shared style */
+section {
+  margin: 17rem auto;
+}
+h4 {
+  color: #0b0223;
+  font-size: 4.8rem;
+  font-weight: 600;
+}
+p {
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 3rem; /* 150% */
+}
+
 .size {
   max-width: 1920px;
   border: 1px solid red;
   margin: 0 auto;
+}
+.color__font {
+  font-size: 4.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  background: linear-gradient(#f948b2, #8758f1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* button style */
+.btn {
+  padding: 2rem 4rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 4.8rem;
+  border: 0;
+  margin-top: 3rem;
+  margin-right: 1rem;
+}
+.btn a {
+  color: #fff;
+}
+.btn__primary {
+  background-color: #ff425a;
+}
+
+.btn__secondary {
+  background-color: #4ec5f7;
 }
 /* header style */
 .nav {
@@ -103,10 +149,8 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 20rem;
-  /* flex: 0 0 auto; */
 }
 .banner__des {
-  /* display: flex; */
   align-self: flex-start;
   padding: 8rem 0;
 }
@@ -121,48 +165,40 @@ img {
   background-position: center;
   padding-left: 23rem;
 }
-.banner__des h4 {
-  color: #0b0223;
-  font-size: 4.8rem;
-  font-weight: 600;
-}
+
 .banner__des h2 {
   font-size: 9.5rem;
   font-weight: 800;
   text-transform: uppercase;
-  margin-bottom: 2rem;
-  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .banner__des p {
-  color: #534c64;
   font-size: 2rem;
-  font-weight: 500;
   text-transform: lowercase;
-  padding: 0.8rem;
+  padding-bottom: 0.8rem;
 }
 .banner__des p > i {
   padding-right: 0.5rem;
 }
-.btn {
-  padding: 2rem 4rem;
-  font-size: 2rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  border-radius: 4.8rem;
-  border: 0;
-  margin-top: 4rem;
-  margin-right: 1rem;
-}
-.btn a {
-  color: #fff;
-}
-.btn__primary {
-  background-color: #ff425a;
-}
 
-.btn__secondary {
-  background-color: #4ec5f7;
+/* online game section */
+.online .color__font {
+  font-weight: 700;
+}
+.online h4,
+.online p {
+  text-align: center;
+}
+.online p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 1rem 0 5rem 0;
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  gap: 2rem;
+}
+.card p {
+  font-size: 2rem;
 }
