@@ -17,7 +17,8 @@
   }
   .banner,
   .card,
-  .play__now {
+  .play__now,
+  .online {
     padding: 2rem;
   }
   /* banner */
@@ -35,7 +36,6 @@
   /* online game */
   .card {
     grid-template-columns: 1fr;
-    gap: 1rem;
   }
   .online p {
     margin: 1rem 0 1rem 0;

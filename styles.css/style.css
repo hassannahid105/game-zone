@@ -12,7 +12,7 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
-/* shared style */
+/* ============shared style=============================================================================== */
 li {
   list-style: none;
 }
@@ -75,7 +75,7 @@ main {
 .btn__secondary {
   background-color: #4ec5f7;
 }
-/* header style */
+/* ! ============================================header style============================================= */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -146,7 +146,7 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* !banner  */
+/* ! =================================== banner ==================================== */
 .banner {
   display: flex;
   align-items: center;
@@ -180,7 +180,7 @@ main {
   padding-right: 0.5rem;
 }
 
-/* online game section */
+/* ! ========================================online game section ======================================*/
 .online .color__font {
   font-weight: 700;
 }
@@ -199,11 +199,56 @@ main {
   justify-content: space-between;
   gap: 2rem;
 }
+
 .card p {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  width: 80%;
+  text-align: center;
+}
+.image__container {
+  position: relative;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-/* play now */
+/* ! =============Hover effect overlay */
+.image__container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.image__container:hover::before {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* != ========== video  icon  styles */
+.video__icon {
+  display: none;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 30px;
+}
+
+.image__container:hover .video__icon {
+  display: block;
+}
+
+/* ! ===============================play now============================================= */
 .play__now {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -232,7 +277,7 @@ main {
   bottom: -10rem;
   left: -10rem;
 }
-/* game gallery  */
+/* ! ============================== game gallery ====================== */
 .game .image {
   width: 60px;
   height: 60px;
@@ -261,7 +306,7 @@ main {
 .game:hover strong {
   color: #ff42a5;
 }
-/* footer */
+/*! ============================== footer =================================*/
 .footer {
   text-align: center;
   background-color: #0b0223;
