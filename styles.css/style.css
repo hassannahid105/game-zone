@@ -350,3 +350,7 @@ main {
   font-size: 1.5rem;
   font-weight: 500;
 }
+
+.hidden {
+  display: none;
+}
