@@ -200,11 +200,6 @@ main {
   gap: 2rem;
 }
 
-.card p {
-  font-size: 1.5rem;
-  width: 80%;
-  text-align: center;
-}
 .image__container {
   position: relative;
   border: 2px solid transparent;

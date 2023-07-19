@@ -39,6 +39,7 @@
   }
   .online p {
     margin: 1rem 0 1rem 0;
+    padding: 0 10px;
   }
   /* play now */
   .play__now {
