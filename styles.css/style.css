@@ -37,7 +37,10 @@ strong {
   font-weight: 500;
   line-height: 3rem; /* 150% */
 }
-
+header,
+main {
+  padding: 0 2rem;
+}
 .size {
   max-width: 1920px;
   border: 1px solid red;
@@ -151,10 +154,6 @@ strong {
   justify-content: space-between;
   gap: 20rem;
 }
-.banner__des {
-  align-self: flex-start;
-  padding: 8rem 0;
-}
 .banner__des,
 .banner__image {
   width: 50%;
@@ -164,7 +163,8 @@ strong {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding-left: 23rem;
+  padding: 8rem 0 8rem 4rem;
+  align-self: flex-start;
 }
 
 .banner__des h2 {
@@ -242,12 +242,24 @@ strong {
 .games {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
   gap: 3rem;
   padding: 0 2rem;
-  margin-bottom: 1000px;
 }
 .game {
   display: flex;
   align-items: center;
   gap: 1rem;
+  padding: 1rem;
+  transition: 1s ease;
+  border: 3px solid transparent;
+}
+
+.game:hover {
+  border: 3px solid #ff42a5;
+  border-radius: 7rem;
+  visibility: visible;
+}
+.game:hover strong {
+  color: #ff42a5;
 }

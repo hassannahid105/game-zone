@@ -1,7 +1,11 @@
 /* mobile device */
 @media screen and (max-width: 576px) {
   section {
-    margin: 2rem auto;
+    margin: 1.5rem auto;
+  }
+  header,
+  main {
+    padding: 0;
   }
   .nav {
     flex-direction: column;
