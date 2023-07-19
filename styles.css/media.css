@@ -75,6 +75,24 @@
     line-height: 1;
     margin-right: 0.5rem;
   }
+  /* footer */
+  .footer {
+    padding: 8rem 2rem;
+  }
+  .footer .logo {
+    margin-bottom: 3rem;
+  }
+  .link,
+  .social__link,
+  .policy {
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  .social__link {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
 }
 /* mid device */
 @media screen and (min-width: 576px) and (max-width: 992px) {

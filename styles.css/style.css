@@ -43,7 +43,6 @@ main {
 }
 .size {
   max-width: 1920px;
-  border: 1px solid red;
   margin: 0 auto;
 }
 .color__font {
@@ -94,7 +93,7 @@ main {
   margin-right: 2rem;
 }
 
-.logo .logo__text {
+.logo__text a {
   font-size: 4.5rem;
   font-weight: 700;
   color: #0b0223;
@@ -142,7 +141,7 @@ main {
 }
 
 .fa-tiktok {
-  background-image: linear-gradient(#08fff9, #000000);
+  background-image: linear-gradient(#08fff9, #ff0303);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -258,7 +257,6 @@ main {
 .game:hover {
   border: 3px solid #ff42a5;
   border-radius: 7rem;
-  visibility: visible;
 }
 .game:hover strong {
   color: #ff42a5;
@@ -266,12 +264,14 @@ main {
 /* footer */
 .footer {
   text-align: center;
-  margin-bottom: 200px;
   background-color: #0b0223;
   padding: 13rem 10rem;
 }
 .footer .logo {
   margin-bottom: 6rem;
+}
+.footer .logo .logo__text a {
+  color: #fff;
 }
 .link a {
   color: #fff;
@@ -286,6 +286,24 @@ main {
   gap: 4rem;
   justify-content: center;
   margin-bottom: 5rem;
+  flex-wrap: wrap;
+}
+.policy a {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+.social__link a {
+  display: block;
+  background-image: linear-gradient(#f4f7f7, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.social__link button {
+  border: 0;
+  background-color: #0b0223;
 }
 .copyright > strong {
   color: rgba(255, 255, 255, 0.6);
