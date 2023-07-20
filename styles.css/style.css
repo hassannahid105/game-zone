@@ -70,10 +70,18 @@ main {
 }
 .btn__primary {
   background-color: #ff425a;
+  transition: 0.8s ease-out;
+}
+.btn__primary:hover {
+  background-color: #4ec5f7;
 }
 
 .btn__secondary {
   background-color: #4ec5f7;
+  transition: 0.8s ease-out;
+}
+.btn__secondary:hover {
+  background-color: #ff425a;
 }
 /* ! ============================================header style============================================= */
 .nav {

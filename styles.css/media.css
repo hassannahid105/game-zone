@@ -7,6 +7,9 @@
   main {
     padding: 0;
   }
+  .btn {
+    font-size: 1.7rem;
+  }
   .nav {
     flex-direction: column;
     gap: 6rem;
@@ -95,36 +98,49 @@
     gap: 2rem;
   }
 }
-/* mid device */
+/*! =============================================== mid device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
+  section {
+    margin: 6rem auto;
+  }
   .banner,
   .card,
   .play__now {
-    padding: 4rem;
+    padding: 2rem;
   }
   .nav {
     flex-direction: column;
-    gap: 6rem;
+    gap: 4rem;
   }
   .nav__items {
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 4rem;
   }
   /* banner */
   .banner {
     flex-direction: column-reverse;
     padding: 2rem;
+    gap: 4rem;
   }
   .banner__des {
     padding: 0;
+    text-align: center;
   }
   .banner__des,
   .banner__image {
     width: 100%;
   }
+  /* online game  */
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .online p {
+    margin: 1rem 0 2rem 0;
+  }
   /* play now */
   .play__now {
     grid-template-columns: 1fr;
+    margin: 0 auto;
   }
   .play__now_image {
     width: 90%;
@@ -132,9 +148,10 @@
   }
   .play__now_text {
     width: 100%;
-    margin-left: 0;
+    margin-left: 2rem;
   }
   .play__now_text p {
+    text-align: center;
     margin-bottom: 2rem;
   }
   .position {
